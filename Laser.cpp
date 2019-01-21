@@ -1,6 +1,9 @@
+#include <iostream>
+
+#include "config.h"
 #include "Laser.h"
 
-#include <iostream>
+
 using namespace std;
 
 void Laser::startLaser(int x)
@@ -25,14 +28,15 @@ void Laser::putLaser() const
 
 void Laser::moveLaser()
 {	
+	auto pos = coord.getPositionY();
 	removeLaser();
-	if (coord.getPositionY()>0)
-	{
+	if (pos > 0 && pos > LIGNE_DEBUT + 1) {
 		coord.setPositionY(coord.getPositionY()-1);
 		putLaser();
 	}
-	else
+	else {
 		isAlive = false;
+	}
 }
 
 void Laser::killLaser()
