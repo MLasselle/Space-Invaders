@@ -73,8 +73,13 @@ int main()
 	//	on efface le curseur
 	UIKit::curseurVisible(false);
 
-	//	boucle principale de jeu
+	//déterminer la dimension de la fenetre
+	UIKit::setDimensionFenetre(1, 1, 41, 42);
+
+	//	boucle principale de jeu 
 	while (!finDeJeu) {
+
+		UIKit::cadre(2, 1, 39, 41, 1);
 
 		//	deplacements et tir du vaisseau (timer timerVaisseau)
 		if (timerVaisseau.estPret()) {
@@ -88,6 +93,7 @@ int main()
 				if (i < MAX_LASERS)
 					mesLasers[i].startLaser(monVaisseau.coord.getPositionX());
 			}
+			monVaisseau.modifierPosition('\0');
 		}
 
 		//	deplacement des lasers (timer timerMissile)

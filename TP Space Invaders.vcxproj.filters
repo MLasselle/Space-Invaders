@@ -15,52 +15,52 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Partie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Coord.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\ExtraTerrestre.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Laser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Martien.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\UIKit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Vaisseau.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Partie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Coord.cpp">
+    <ClCompile Include="Coord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\ExtraTerrestre.cpp">
+    <ClCompile Include="ExtraTerrestre.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Laser.cpp">
+    <ClCompile Include="Laser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Martien.cpp">
+    <ClCompile Include="Martien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\SpaceMain.cpp">
+    <ClCompile Include="SpaceMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\UIKit.cpp">
+    <ClCompile Include="UIKit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Vaisseau.cpp">
+    <ClCompile Include="Vaisseau.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Coord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraTerrestre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Martien.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Partie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIKit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaisseau.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

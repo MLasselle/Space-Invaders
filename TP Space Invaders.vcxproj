@@ -115,23 +115,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Coord.h" />
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\ExtraTerrestre.h" />
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Laser.h" />
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Martien.h" />
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\UIKit.h" />
-    <ClInclude Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Vaisseau.h" />
-    <ClInclude Include="Partie.h" />
+    <ClCompile Include="Coord.cpp" />
+    <ClCompile Include="ExtraTerrestre.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="Martien.cpp" />
+    <ClCompile Include="Partie.cpp" />
+    <ClCompile Include="SpaceMain.cpp" />
+    <ClCompile Include="UIKit.cpp" />
+    <ClCompile Include="Vaisseau.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Coord.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\ExtraTerrestre.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Laser.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Martien.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\SpaceMain.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\UIKit.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\420-D03-SU - Introduction à la programmation orientée objet - H19\TP-SpaceInvader2 (1)\Vaisseau.cpp" />
-    <ClCompile Include="Partie.cpp" />
+    <ClInclude Include="Coord.h" />
+    <ClInclude Include="ExtraTerrestre.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="Martien.h" />
+    <ClInclude Include="Partie.h" />
+    <ClInclude Include="UIKit.h" />
+    <ClInclude Include="Vaisseau.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
