@@ -1,11 +1,15 @@
+#include <conio.h>
+#include <Windows.h>		//	pour utiliser GetAsynKeyState
+#include <time.h>
+
+#include "UIKit.h"
+
+#include "config.h"
 #include "Vaisseau.h"
 #include "Laser.h"
 #include "Martien.h"
 
-#include "UIKit.h"
-#include <conio.h>
-#include <Windows.h>		//	pour utiliser GetAsynKeyState
-#include <time.h>
+
 
 class Timer {
 private:
@@ -74,12 +78,12 @@ int main()
 	UIKit::curseurVisible(false);
 
 	//déterminer la dimension de la fenetre
-	UIKit::setDimensionFenetre(1, 1, 41, 42);
+	UIKit::setDimensionFenetre(COL_DEBUT, LIGNE_DEBUT, COL_FIN, LIGNE_FIN);
 
 	//	boucle principale de jeu 
 	while (!finDeJeu) {
 
-		UIKit::cadre(2, 1, 39, 41, 1);
+		UIKit::cadre(COL_DEBUT + 1, LIGNE_DEBUT, COL_FIN - 1, LIGNE_FIN - 1, 1);
 
 		//	deplacements et tir du vaisseau (timer timerVaisseau)
 		if (timerVaisseau.estPret()) {

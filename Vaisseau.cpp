@@ -1,6 +1,10 @@
+#include <iostream>
+
+#include "config.h"
 #include "Vaisseau.h"
 
-#include <iostream>
+
+
 using namespace std;
 
 void Vaisseau::removeVaisseau() const
@@ -17,8 +21,8 @@ void Vaisseau::putVaisseau() const
 
 Vaisseau::Vaisseau()
 {
-	coord.setPositionX(20);
-	coord.setPositionY(40);
+	coord.setPositionX((COL_FIN - COL_DEBUT) /2 );
+	coord.setPositionY(LIGNE_FIN -2 );
 	putVaisseau();
 }
 
@@ -27,8 +31,14 @@ void Vaisseau::modifierPosition(char key)
 	removeVaisseau();
 	switch(key)
 	{
-		case 'k' :	coord.setPositionX(coord.getPositionX()-1);	break;
-		case 'l' :	coord.setPositionX(coord.getPositionX()+1);
+		case 'k' :	
+			if (coord.getPositionX() > COL_DEBUT + 2)
+				coord.setPositionX(coord.getPositionX()-1);	
+			break;
+		case 'l' :	
+			if (coord.getPositionX() < COL_FIN - 2)
+				coord.setPositionX(coord.getPositionX()+1);
+			break;
 	}
 	putVaisseau();
 }

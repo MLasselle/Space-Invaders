@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClInclude Include="Coord.h" />
     <ClInclude Include="ExtraTerrestre.h" />
+    <ClInclude Include="config.h" />
     <ClInclude Include="Laser.h" />
     <ClInclude Include="Martien.h" />
     <ClInclude Include="Partie.h" />
