@@ -1,7 +1,7 @@
 #include <conio.h>
 #include <Windows.h>		//	pour utiliser GetAsynKeyState
 #include <time.h>
-
+#include"Timer.h"
 #include "UIKit.h"
 
 #include "config.h"
@@ -10,29 +10,6 @@
 #include "Martien.h"
 
 
-
-class Timer {
-private:
-	clock_t date;
-	int delai;
-
-public:
-	Timer(int delai) {
-		this->delai = delai;
-		date = clock();
-	}
-
-	bool estPret() {
-		bool result = false;
-		if (clock() >= date + delai) {
-			date = clock();
-			result = true;
-		}
-
-		return result;
-	}
-
-};
 
 //	nombre maximum de lasers a l'ecran
 #define MAX_LASERS 15
@@ -51,6 +28,9 @@ void testerCollision(Laser & unLaser, Martien & unMartien) {
 //	fonction principale
 int main()
 {
+
+
+	
 	srand((unsigned int)time(NULL));
 
 	bool finDeJeu = false;
@@ -82,7 +62,7 @@ int main()
 
 	//	boucle principale de jeu 
 	while (!finDeJeu) {
-
+		//Determiner la dimension et la couleur du cadre (UIkit)
 		UIKit::cadre(COL_DEBUT + 1, LIGNE_DEBUT, COL_FIN - 1, LIGNE_FIN - 1, 2);
 
 		//	deplacements et tir du vaisseau (timer timerVaisseau)
@@ -123,6 +103,7 @@ int main()
 				}
 		}
 	}
-
+	
+	//system("pause");
 	return 0;
 }

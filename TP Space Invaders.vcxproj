@@ -121,6 +121,7 @@
     <ClCompile Include="Martien.cpp" />
     <ClCompile Include="Partie.cpp" />
     <ClCompile Include="SpaceMain.cpp" />
+    <ClCompile Include="Timer.cpp" />
     <ClCompile Include="UIKit.cpp" />
     <ClCompile Include="Vaisseau.cpp" />
   </ItemGroup>
@@ -131,6 +132,7 @@
     <ClInclude Include="Laser.h" />
     <ClInclude Include="Martien.h" />
     <ClInclude Include="Partie.h" />
+    <ClInclude Include="Timer.h" />
     <ClInclude Include="UIKit.h" />
     <ClInclude Include="Vaisseau.h" />
   </ItemGroup>
