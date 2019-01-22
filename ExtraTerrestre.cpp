@@ -24,6 +24,7 @@ int ExtraTerrestre::getNombreExtraTerrestre()
 void ExtraTerrestre::resetNombreExtraTerrestre()
 {
 	nombreExtraTerrestre=0;
+	
 }
 
 void ExtraTerrestre::removeExtraTerrestre() const

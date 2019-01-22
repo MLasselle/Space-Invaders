@@ -66,13 +66,13 @@ int main()
 		mesLasers[i].isAlive = false;
 
 	//	un ennemi
-	Martien unMartien('T', 5);
-	unMartien.resetExtraTerrestre();
+	Martien martien('W', 5);
+	martien.resetExtraTerrestre();
 	Timer timerMartien(1000);
 
 	//	des ennemis (exemple a terminer...)
-	Martien zozo('U', 10);
-	Martien lesMartiens[] = { zozo, zozo, zozo, zozo, zozo };
+	Martien alien('U', 10);
+	Martien lesMartiens[] = { alien, alien, alien, alien, alien };
 
 	//	on efface le curseur
 	UIKit::curseurVisible(false);
@@ -83,7 +83,7 @@ int main()
 	//	boucle principale de jeu 
 	while (!finDeJeu) {
 
-		UIKit::cadre(COL_DEBUT + 1, LIGNE_DEBUT, COL_FIN - 1, LIGNE_FIN - 1, 1);
+		UIKit::cadre(COL_DEBUT + 1, LIGNE_DEBUT, COL_FIN - 1, LIGNE_FIN - 1, 2);
 
 		//	deplacements et tir du vaisseau (timer timerVaisseau)
 		if (timerVaisseau.estPret()) {
@@ -107,19 +107,19 @@ int main()
 					mesLasers[i].moveLaser();
 
 					//	test de collision avec le martien
-					testerCollision(mesLasers[i], unMartien);
+					testerCollision(mesLasers[i], martien);
 				}
 		}
 
 		//	deplacement du martien (timer timerMartien)
-		if (unMartien.isAlive && timerMartien.estPret()) {
-			unMartien.jiggleMartien();
+		if (martien.isAlive && timerMartien.estPret()) {
+			martien.jiggleMartien();
 
 			//	test de collision avec les lasers
 			for (int i = 0; i < MAX_LASERS; i++)
 				if (mesLasers[i].isAlive) {
 					//	test de collision avec le martien
-					testerCollision(mesLasers[i], unMartien);
+					testerCollision(mesLasers[i], martien);
 				}
 		}
 	}
