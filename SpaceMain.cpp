@@ -36,7 +36,8 @@ int main()
 
 	presentation();
 	menue();
-	//saisirNiveau();
+	system("cls");
+	saisirNiveau();
 	system("cls");
 
 	
@@ -72,7 +73,7 @@ int main()
 	//	boucle principale de jeu 
 	while (!finDeJeu) {
 		//Determiner la dimension et la couleur du cadre (UIkit)
-		UIKit::cadre(COL_DEBUT + 1, LIGNE_DEBUT, COL_FIN - 1, LIGNE_FIN - 1, 2);
+		UIKit::cadre(COL_DEBUT + 1, LIGNE_DEBUT, COL_FIN - 20, LIGNE_FIN - 1, 2);
 
 		//	deplacements et tir du vaisseau (timer timerVaisseau)
 		if (timerVaisseau.estPret()) {
@@ -136,7 +137,7 @@ void presentation() {
 		cout << "      |_____| |_|  1_| |___/   /_/   |_| |_____/ |_____| |_|  1_1 /_____/ " << endl;
 		cout << endl << endl << endl; UIKit::color(9);
 		cout << "                      Programme par Maxime,Pierre et Alpha    " << endl << endl;
-		cout << "                                 twiy-logic.fr            " << endl << endl << endl;
+		
 		cout << "                       Tapez sur une touche pour continuer" << endl;
 		fflush(stdout);
 		_getch();
@@ -153,7 +154,7 @@ void menue()
 	cout << endl;
 	cout << "               _____________________________________________              " << endl;
 	cout << "              |                                             |             " << endl;
-	cout << "              |         Etes vous pret a jouer ?         |             " << endl;
+	cout << "              |         Etes vous pret a jouer ?            |             " << endl;
 	cout << "              |_____________________________________________|             " << endl;
 	cout << endl << endl;
 	UIKit::color(10);
@@ -213,7 +214,7 @@ void menue()
 void ecrans_help() {
 	//UIKit::setDimensionFenetre(COL_DEBUT, LIGNE_DEBUT, COL_FIN, LIGNE_FIN);
 	//UIKit::cadre(COL_DEBUT + 1, LIGNE_DEBUT, COL_FIN - 1, LIGNE_FIN - 1, 2);
-	UIKit::color(9);
+	UIKit::color(11);
 	cout << endl;
 	cout << "                     Bienvenue dans HELLO INVADERS,                       " << endl << endl;
 	cout << "     Le but de ce jeu est de detruire le plus d'extraterrestre possible   " << endl << endl;
@@ -235,17 +236,21 @@ void ecrans_help() {
 
 int saisirNiveau()
 {
+
+
 	int saisirNiveau, nbExtraterrestre;
 	bool ex = false;
-
-	cout << " !!!!!!SPACE INVADERS ****>> !!!!!! " << endl;
+	UIKit::color(11);
+	cout << endl;
+	cout << endl;
+	cout << "                      !!!!!!****SPACE INVADERS ****>> !!!!!!                        " << endl;
 
 	cout << endl;
 	cout << endl;
 
-	cout << " ****** NIVEAU 1 // 1 ****** " << endl;
-	cout << " ****** NIVEAU 2 // 2 ****** " << endl;
-	cout << " ****** NIVEAU 3 // 3 ****** " << endl;
+	cout << "                           ****** NIVEAU 1 // 1 ******                              " << endl;
+	cout << "                           ****** NIVEAU 2 // 2 ******                              " << endl;
+	cout << "                           ****** NIVEAU 3 // 3 ******                              " << endl;
 
 	cout << endl;
 	cout << endl;
@@ -270,6 +275,8 @@ int saisirNiveau()
 		}
 
 	} while (!ex);
+
+	/* ***********A TERMINER AVEC ALPHA POUR NIVEAU DE DIFFICULTER***************** */
 
 	if (saisirNiveau == 1) {
 		nbExtraterrestre = 4;
