@@ -16,7 +16,7 @@ void Vaisseau::removeVaisseau() const
 void Vaisseau::putVaisseau() const
 {
 	coord.gotoXY(coord.getPositionX(),coord.getPositionY());
-	cout << char(19);
+	cout << char(237);
 }
 
 Vaisseau::Vaisseau()

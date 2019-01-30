@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include"UIKit.h"
 #include "config.h"
 #include "Laser.h"
 
@@ -8,8 +8,10 @@ using namespace std;
 
 void Laser::startLaser(int x)
 {
+	
 	coord.setPositionX(x);
 	coord.setPositionY(39);
+	
 	putLaser();
 	isAlive = true;
 }
@@ -22,6 +24,7 @@ void Laser::removeLaser() const
 
 void Laser::putLaser() const
 {	
+	
 	coord.gotoXY(coord.getPositionX(),coord.getPositionY());
 	cout << char(15);		
 }

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef PARTIE_H
+#define PARTIE_H
+
 class Partie {
 	int score;
 	int difficulte;
@@ -9,3 +11,4 @@ public:
 	void demarrerPartie();
 };
 
+#endif

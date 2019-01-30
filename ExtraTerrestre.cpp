@@ -1,6 +1,7 @@
 #include "ExtraTerrestre.h"
 #include <stdlib.h>
 #include<iostream>
+#include"config.h"
 using namespace std;
 
 int ExtraTerrestre::nombreExtraTerrestre = 0;
@@ -46,8 +47,8 @@ int ExtraTerrestre::ajouterPoints() const
 
 void ExtraTerrestre::resetExtraTerrestre()
 {
-	coord.setPositionX(rand()%40+1);
-	coord.setPositionY(rand()%20+1);
+	coord.setPositionX(rand()%80+4);
+	coord.setPositionY(rand()%25+2);
 	isAlive = true;
 	nombreExtraTerrestre++;
 }

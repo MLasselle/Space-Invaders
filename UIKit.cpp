@@ -1,5 +1,5 @@
 //	Version au 15/01/2015
-#include "UIKit.h"
+#include"UIKit.h"
 #define VERSION_CPP 15012015
 
 #if VERSION_CPP != VERSION_H
@@ -116,22 +116,30 @@ void UIKit::cadre(int cd,int ld,int cf,int lf, int couleur)
     color(couleur);  //définir la couleur du cadre
     
 	gotoXY(cd,ld);
-    cout<<(char)201;  //coin supérieur gauche
+	cout << (char)176;
+    //cout<<(char)201;  //coin supérieur gauche
     for(int i=cd+1;i<cf;i++)
-    	 cout<<(char)205; //ligne horizontale du haut
-	cout<<(char)187;  //coin supérieur droit
+		cout << (char)176;
+    	 //cout<<(char)205; //ligne horizontale du haut
+	cout << (char)176;
+	//cout<<(char)187;  //coin supérieur droit
     for(int i=ld+1;i<lf;i++)
     {
     	 gotoXY(cd,i);
-    	 cout<<(char)186;  //ligne verticale gaughe
+		 cout << (char)176;
+    	// cout<<(char)186;  //ligne verticale gaughe
     	 gotoXY(cf,i);
-    	 cout<<(char)186;  //ligne verticale droite
+		 cout << (char)176;
+    	 //cout<<(char)186;  //ligne verticale droite
     }
     gotoXY(cd,lf);
-    cout<<(char)200;  //coin inférieur gauche
+	cout << (char)176;
+    //cout<<(char)200;  //coin inférieur gauche
     for(int i=cd+1;i<cf;i++)
-    	cout<<(char)205;  //ligne horizontale inférieure
-    cout<<(char)188;  //coin inférieur droit
+		cout << (char)176;
+    	//cout<<(char)205;  //ligne horizontale inférieure
+	cout << (char)176;
+    //cout<<(char)188;  //coin inférieur droit
 }
 
 /*

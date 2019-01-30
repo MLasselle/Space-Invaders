@@ -44,7 +44,6 @@ public:
 
 	//dessiner un cadre
 	static void cadre(int cd,int ld,int cf,int lf, int couleur);
-
 	static int whereX();
 	static int whereY();
 	static void curseurVisible(bool visibilite);

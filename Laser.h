@@ -1,6 +1,6 @@
 #ifndef LASER_H
 #define LASER_H
-
+#include "UIKit.h"
 #include "Coord.h"
 
 class Laser
@@ -8,7 +8,7 @@ class Laser
 public:
 	bool isAlive;
 	Coord coord;
-
+	
 	void startLaser(int);
 	void removeLaser() const;
 	void putLaser() const;
