@@ -1,0 +1,3 @@
+﻿  SpaceMain.cpp
+c:\users\mlassell\documents\github\tp-space-invaders\spacemain.cpp(502): warning C4101: 'nbExtraterrestre': unreferenced local variable
+  TP Space Invaders.vcxproj -> C:\Users\mlassell\Documents\GitHub\tp-space-invaders\x64\Debug\TP Space Invaders.exe
