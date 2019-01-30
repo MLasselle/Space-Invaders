@@ -111,9 +111,54 @@ int main()
 			probaTirNeptunien=50;
 
 		}else if(niveau==2){
+			//donnees pour le vaisseau
+			nbVies = 2;
+			timerVaisseau.set(55);
+			timerLaser.set(40);
+			maxLasers = 5;
+
+			//donnees pour les martiens
+			nbMartiens = 10;
+			// timer spawn martien ?
+			timerTirMartien.set(100);
+			probaTirMartien = 50;
+
+			//donnees pour les venusiens
+			nbVenusiens = 10;
+			timerSpawnVenusien.set(500);
+			timerTirVenusien.set(200);
+			probaTirVenusien = 50;
+
+			//donnees pour les neptuniens
+			nbNeptuniens = 10;
+			timerSpawnNeptunien.set(500);
+			timerTirNeptunien.set(200);
+			probaTirNeptunien = 50;
 			
 		}else if(niveau==3){
-			
+			//donnees pour le vaisseau
+			nbVies = 1;
+			timerVaisseau.set(55);
+			timerLaser.set(40);
+			maxLasers = 3;
+
+			//donnees pour les martiens
+			nbMartiens = 3;
+			// timer spawn martien ?
+			timerTirMartien.set(100);
+			probaTirMartien = 50;
+
+			//donnees pour les venusiens
+			nbVenusiens = 10;
+			timerSpawnVenusien.set(500);
+			timerTirVenusien.set(200);
+			probaTirVenusien = 50;
+
+			//donnees pour les neptuniens
+			nbNeptuniens = 10;
+			timerSpawnNeptunien.set(500);
+			timerTirNeptunien.set(200);
+			probaTirNeptunien = 50;
 		}else{
 			return 1;
 		}

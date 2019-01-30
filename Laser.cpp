@@ -10,7 +10,7 @@ void Laser::startLaser(int x)
 {
 	
 	coord.setPositionX(x);
-	coord.setPositionY(39);
+	coord.setPositionY(47);
 	
 	putLaser();
 	isAlive = true;
