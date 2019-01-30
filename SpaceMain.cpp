@@ -396,7 +396,7 @@ void presentation() {
 	Coord::gotoXY(30, 25); cout << "       _| |_  | | 1  | | |/ /   / ,__  | | |_| | | |___  | | 1 1   ___| | " << endl;
 	Coord::gotoXY(30, 26); cout << "      |_____| |_|  1_| |___/   /_/   |_| |_____/ |_____| |_|  1_1 /_____/ " << endl;
 	Coord::gotoXY(30, 27); cout << endl << endl << endl; UIKit::color(9);
-	Coord::gotoXY(30, 28); cout << "                      Programme par Maxime,Pierre et Alpha    " << endl << endl;
+	Coord::gotoXY(30, 28); cout << "                      Programme par Maxime !    " << endl << endl;
 
 	Coord::gotoXY(30, 29); cout << "                       Tapez sur une touche pour continuer" << endl;
 	fflush(stdout);
